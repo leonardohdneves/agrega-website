@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Building2, Truck, Zap, Layers, BarChart3 } from "lucide-react";
+import Banners from "@/components/Banners";
 
 const beneficios = [
   {
@@ -41,6 +42,8 @@ const faqs = [
 export default function Home() {
   return (
     <>
+      <Banners />
+
       {/* Hero */}
       <section className="bg-gradient-to-b from-stone-100 to-white">
         <div className="mx-auto max-w-6xl px-6 py-24 text-center">
