@@ -17,8 +17,8 @@ const slides = [
     fundo: "bg-agrega-blue",
   },
   {
-    logo: "/logos/agrega-concreteiras-simbolo.png",
-    logoFundoClaro: false,
+    logo: "/logos/agrega-concreteiras-icone.svg",
+    logoFundoClaro: true,
     alt: "Agrega Concreteiras",
     titulo: "Controle total da sua frota de betoneiras",
     texto: "Operações, financeiro e lucratividade de betoneiras e bombas.",
