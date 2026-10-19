@@ -23,7 +23,7 @@ export default function SobrePage() {
       <div className="mt-16 grid gap-8 md:grid-cols-3">
         {valores.map((v) => (
           <div key={v.titulo} className="rounded-2xl border border-stone-200 p-6">
-            <v.icone size={32} className="text-orange-600" />
+            <v.icone size={32} className="text-agrega-graphite" />
             <h2 className="mt-4 text-xl font-semibold">{v.titulo}</h2>
             <p className="mt-2 text-stone-600">{v.texto}</p>
           </div>

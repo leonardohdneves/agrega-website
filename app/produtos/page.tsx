@@ -47,17 +47,17 @@ export default function ProdutosPage() {
         {produtos.map((p) => (
           <section key={p.id} id={p.id} className="grid scroll-mt-24 gap-10 md:grid-cols-2">
             <div>
-              <p.icone size={48} className="text-orange-600" />
+              <p.icone size={48} className="text-agrega-graphite" />
               <h2 className="mt-4 text-3xl font-bold">{p.nome}</h2>
               <p className="mt-4 text-stone-600">{p.descricao}</p>
-              <button className="mt-8 rounded-lg bg-orange-600 px-6 py-3 font-semibold text-white hover:bg-orange-700">
+              <button className="mt-8 rounded-lg bg-agrega-graphite px-6 py-3 font-semibold text-white hover:bg-agrega-graphite-dark">
                 Conhecer {p.nome}
               </button>
             </div>
             <ul className="space-y-3 rounded-2xl bg-stone-50 p-8">
               {p.features.map((f) => (
                 <li key={f} className="flex items-start gap-3">
-                  <Check size={20} className="mt-0.5 shrink-0 text-orange-600" />
+                  <Check size={20} className="mt-0.5 shrink-0 text-agrega-graphite" />
                   <span>{f}</span>
                 </li>
               ))}

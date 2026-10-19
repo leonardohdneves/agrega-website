@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-orange-50 to-white">
+      <section className="bg-gradient-to-b from-stone-100 to-white">
         <div className="mx-auto max-w-6xl px-6 py-24 text-center">
           <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
             Gerencie suas obras e frotas com inteligência.
@@ -51,7 +51,7 @@ export default function Home() {
             Controle total de operações, financeiro e tomada de decisão em um único lugar.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-            <Link href="/produtos" className="rounded-lg bg-orange-600 px-6 py-3 font-semibold text-white hover:bg-orange-700">
+            <Link href="/produtos" className="rounded-lg bg-agrega-graphite px-6 py-3 font-semibold text-white hover:bg-agrega-graphite-dark">
               Explorar Produtos
             </Link>
             <Link href="/contato" className="rounded-lg border border-stone-300 px-6 py-3 font-semibold hover:bg-stone-50">
@@ -66,14 +66,14 @@ export default function Home() {
         <h2 className="text-center text-3xl font-bold">Nossos produtos</h2>
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           <Link href="/produtos#construtoras" className="rounded-2xl border border-stone-200 p-8 hover:shadow-lg">
-            <Building2 size={40} className="text-orange-600" />
+            <Building2 size={40} className="text-agrega-graphite" />
             <h3 className="mt-4 text-2xl font-semibold">Agrega Construtoras</h3>
             <p className="mt-3 text-stone-600">
               ERP completo para planejamento, orçamento e controle de obras.
             </p>
           </Link>
           <Link href="/produtos#concreteiras" className="rounded-2xl border border-stone-200 p-8 hover:shadow-lg">
-            <Truck size={40} className="text-orange-600" />
+            <Truck size={40} className="text-agrega-graphite" />
             <h3 className="mt-4 text-2xl font-semibold">Agrega Concreteiras</h3>
             <p className="mt-3 text-stone-600">
               Gestão de frota de betoneiras e bombas, operações e financeiro.
@@ -89,7 +89,7 @@ export default function Home() {
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {beneficios.map((b) => (
               <div key={b.titulo} className="rounded-2xl bg-white p-8 shadow-sm">
-                <b.icon size={32} className="text-orange-600" />
+                <b.icon size={32} className="text-agrega-graphite" />
                 <h3 className="mt-4 text-xl font-semibold">{b.titulo}</h3>
                 <p className="mt-2 text-stone-600">{b.descricao}</p>
               </div>
@@ -112,10 +112,10 @@ export default function Home() {
       </section>
 
       {/* CTA final */}
-      <section className="bg-orange-600 py-16 text-center text-white">
+      <section className="bg-gradient-to-r from-agrega-blue to-agrega-orange py-16 text-center text-white">
         <h2 className="text-3xl font-bold">Pronto para transformar sua gestão?</h2>
         <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-          <Link href="/contato" className="rounded-lg bg-white px-6 py-3 font-semibold text-orange-600">
+          <Link href="/contato" className="rounded-lg bg-white px-6 py-3 font-semibold text-agrega-graphite">
             Agendar demo
           </Link>
           <Link href="/contato" className="rounded-lg border border-white px-6 py-3 font-semibold">

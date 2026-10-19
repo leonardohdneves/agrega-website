@@ -33,7 +33,7 @@ export default function ContatoPage() {
   };
 
   const campo =
-    "mt-1 w-full rounded-lg border border-stone-300 px-4 py-2 focus:border-orange-500 focus:outline-none";
+    "mt-1 w-full rounded-lg border border-stone-300 px-4 py-2 focus:border-agrega-graphite focus:outline-none";
 
   return (
     <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2">
@@ -44,8 +44,8 @@ export default function ContatoPage() {
         </p>
 
         <div className="mt-10 space-y-4">
-          <p className="flex items-center gap-3"><Mail size={20} className="text-orange-600" /> contato@agrega.com.br</p>
-          <p className="flex items-center gap-3"><Phone size={20} className="text-orange-600" /> WhatsApp: (00) 00000-0000</p>
+          <p className="flex items-center gap-3"><Mail size={20} className="text-agrega-graphite" /> contato@agrega.com.br</p>
+          <p className="flex items-center gap-3"><Phone size={20} className="text-agrega-graphite" /> WhatsApp: (00) 00000-0000</p>
         </div>
       </div>
 
@@ -77,7 +77,7 @@ export default function ContatoPage() {
           <label className="text-sm font-medium">Mensagem</label>
           <textarea name="mensagem" rows={4} value={formData.mensagem} onChange={handleChange} className={campo} />
         </div>
-        <button type="submit" className="w-full rounded-lg bg-orange-600 py-3 font-semibold text-white hover:bg-orange-700">
+        <button type="submit" className="w-full rounded-lg bg-agrega-graphite py-3 font-semibold text-white hover:bg-agrega-graphite-dark">
           Enviar
         </button>
         {enviado && <p className="text-center text-green-700">Mensagem enviada! Retornaremos em breve.</p>}

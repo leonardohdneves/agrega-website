@@ -18,13 +18,13 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-stone-200 bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="text-2xl font-bold text-orange-600">
+        <Link href="/" className="bg-gradient-to-r from-agrega-blue to-agrega-orange bg-clip-text text-2xl font-bold text-transparent">
           Agrega
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
-            <Link key={l.href} href={l.href} className="text-stone-700 hover:text-orange-600">
+            <Link key={l.href} href={l.href} className="text-stone-700 hover:text-agrega-graphite">
               {l.label}
             </Link>
           ))}

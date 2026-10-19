@@ -40,10 +40,10 @@ export default function BlogPage() {
       <div className="mt-12 grid gap-8 md:grid-cols-2">
         {posts.map((p) => (
           <article key={p.slug} className="rounded-2xl border border-stone-200 p-8 hover:shadow-lg">
-            <span className="text-sm font-medium text-orange-600">{p.categoria}</span>
+            <span className="text-sm font-medium text-agrega-graphite">{p.categoria}</span>
             <h2 className="mt-2 text-xl font-semibold">{p.titulo}</h2>
             <p className="mt-3 text-stone-600">{p.excerpt}</p>
-            <Link href="#" className="mt-6 inline-block font-semibold text-orange-600">
+            <Link href="#" className="mt-6 inline-block font-semibold text-agrega-graphite">
               Ler mais →
             </Link>
           </article>

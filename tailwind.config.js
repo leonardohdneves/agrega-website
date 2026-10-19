@@ -8,10 +8,10 @@ module.exports = {
     extend: {
       colors: {
         agrega: {
-          50: '#fff7ed',
-          500: '#f97316',
-          600: '#ea580c',
-          900: '#1c1917',
+          graphite: '#2B2F36',
+          'graphite-dark': '#1C1F24',
+          blue: '#1E4E9A',
+          orange: '#F26B1D',
         },
       },
     },
