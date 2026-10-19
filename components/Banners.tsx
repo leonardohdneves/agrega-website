@@ -18,14 +18,14 @@ const slides = [
   },
   {
     logo: "/logos/agrega-concreteiras-icone.svg",
-    logoFundoClaro: true,
+    logoFundoClaro: false,
     alt: "Agrega Concreteiras",
     titulo: "Controle total da sua frota de betoneiras",
     texto: "Operações, financeiro e lucratividade de betoneiras e bombas.",
     cta: "Conhecer o produto",
     href: "/produtos#concreteiras",
     foto: "/banners/betoneira.jpg",
-    fundo: "bg-agrega-graphite",
+    fundo: "bg-agrega-orange",
   },
   {
     logo: "/logos/agrega-holding-fundo-claro.svg",
