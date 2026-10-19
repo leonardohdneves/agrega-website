@@ -5,24 +5,34 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
-    titulo: "Agrega Construtoras",
-    texto: "Planejamento, orçamento e controle financeiro de obras em um só lugar.",
+    logo: "/logos/agrega-construtoras-branco.svg",
+    alt: "Agrega Construtoras",
+    titulo: "Planejamento e controle de obras em um só lugar",
+    texto: "Orçamento, cronograma e controle financeiro integrados para construtoras.",
     cta: "Conhecer o produto",
     href: "/produtos#construtoras",
+    // Foto de fundo: coloque o arquivo em public/banners/ e preencha o caminho.
+    foto: "/banners/obra.jpg",
     fundo: "bg-agrega-blue",
   },
   {
-    titulo: "Agrega Concreteiras",
-    texto: "Controle de betoneiras e bombas, operações e lucratividade.",
+    logo: "/logos/agrega-concreteiras-branco.svg",
+    alt: "Agrega Concreteiras",
+    titulo: "Controle total da sua frota de betoneiras",
+    texto: "Operações, financeiro e lucratividade de betoneiras e bombas.",
     cta: "Conhecer o produto",
     href: "/produtos#concreteiras",
+    foto: "/banners/betoneira.jpg",
     fundo: "bg-agrega-graphite",
   },
   {
+    logo: "/logos/agrega-logo-branco.svg",
+    alt: "Agrega",
     titulo: "Veja o Agrega funcionando",
     texto: "Agende uma demonstração com nosso time e tire suas dúvidas.",
     cta: "Agendar demo",
     href: "/contato",
+    foto: "/banners/tecnologia.jpg",
     fundo: "bg-gradient-to-r from-agrega-blue to-agrega-orange",
   },
 ];
@@ -49,16 +59,34 @@ export default function Banners() {
         {slides.map((s) => (
           <div
             key={s.titulo}
-            className={`${s.fundo} flex min-w-full flex-col items-center justify-center px-6 py-20 text-center text-white`}
+            className={`${s.fundo} relative flex min-h-[480px] min-w-full items-center justify-center overflow-hidden px-6 py-20 text-center text-white`}
           >
-            <h2 className="text-3xl font-bold md:text-5xl">{s.titulo}</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg opacity-90">{s.texto}</p>
-            <Link
-              href={s.href}
-              className="mt-8 rounded-lg bg-white px-6 py-3 font-semibold text-agrega-graphite hover:bg-stone-100"
-            >
-              {s.cta}
-            </Link>
+            {s.foto && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={s.foto}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 h-full w-full object-cover"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
+              />
+            )}
+            <div className="absolute inset-0 bg-stone-900/60" />
+
+            <div className="relative z-10 flex flex-col items-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={s.logo} alt={s.alt} className="h-16 w-auto md:h-20" />
+              <h2 className="mt-8 text-3xl font-bold md:text-5xl">{s.titulo}</h2>
+              <p className="mx-auto mt-4 max-w-2xl text-lg opacity-90">{s.texto}</p>
+              <Link
+                href={s.href}
+                className="mt-8 rounded-lg bg-white px-6 py-3 font-semibold text-agrega-graphite hover:bg-stone-100"
+              >
+                {s.cta}
+              </Link>
+            </div>
           </div>
         ))}
       </div>
@@ -66,19 +94,19 @@ export default function Banners() {
       <button
         onClick={anterior}
         aria-label="Banner anterior"
-        className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/30 px-3 py-2 text-white hover:bg-white/50"
+        className="absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/30 px-3 py-2 text-white hover:bg-white/50"
       >
         ‹
       </button>
       <button
         onClick={proximo}
         aria-label="Próximo banner"
-        className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/30 px-3 py-2 text-white hover:bg-white/50"
+        className="absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/30 px-3 py-2 text-white hover:bg-white/50"
       >
         ›
       </button>
 
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
+      <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-center gap-2">
         {slides.map((s, i) => (
           <button
             key={s.titulo}
