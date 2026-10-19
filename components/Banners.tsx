@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
-    logo: "/logos/agrega-construtoras-simbolo.png",
-    logoFundoClaro: false,
+    logo: "/logos/agrega-simbolo.svg",
+    logoFundoClaro: true,
     alt: "Agrega Construtoras",
     titulo: "Planejamento e controle de obras em um só lugar",
     texto: "Orçamento, cronograma e controle financeiro integrados para construtoras.",
