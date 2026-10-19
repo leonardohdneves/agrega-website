@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 const slides = [
   {
     logo: "/logos/agrega-construtoras-simbolo.png",
+    logoFundoClaro: false,
     alt: "Agrega Construtoras",
     titulo: "Planejamento e controle de obras em um só lugar",
     texto: "Orçamento, cronograma e controle financeiro integrados para construtoras.",
@@ -17,6 +18,7 @@ const slides = [
   },
   {
     logo: "/logos/agrega-concreteiras-simbolo.png",
+    logoFundoClaro: false,
     alt: "Agrega Concreteiras",
     titulo: "Controle total da sua frota de betoneiras",
     texto: "Operações, financeiro e lucratividade de betoneiras e bombas.",
@@ -26,7 +28,8 @@ const slides = [
     fundo: "bg-agrega-graphite",
   },
   {
-    logo: "/logos/agrega-logo-branco.svg",
+    logo: "/logos/agrega-simbolo.svg",
+    logoFundoClaro: true,
     alt: "Agrega",
     titulo: "Veja o Agrega funcionando",
     texto: "Agende uma demonstração com nosso time e tire suas dúvidas.",
@@ -76,8 +79,15 @@ export default function Banners() {
             <div className="absolute inset-0 bg-stone-900/60" />
 
             <div className="relative z-10 flex flex-col items-center">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={s.logo} alt={s.alt} className="h-16 w-auto md:h-20" />
+              {s.logoFundoClaro ? (
+                <div className="rounded-2xl bg-white p-3 shadow-lg">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={s.logo} alt={s.alt} className="h-16 w-auto md:h-20" />
+                </div>
+              ) : (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={s.logo} alt={s.alt} className="h-16 w-auto md:h-20" />
+              )}
               <h2 className="mt-8 text-3xl font-bold md:text-5xl">{s.titulo}</h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg opacity-90">{s.texto}</p>
               <Link
