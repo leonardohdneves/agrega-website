@@ -18,7 +18,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-stone-200 bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="bg-gradient-to-r from-agrega-blue to-agrega-orange bg-clip-text text-2xl font-bold text-transparent">
+        <Link href="/" className="flex items-center gap-3 text-2xl font-bold text-agrega-graphite">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logos/agrega-holding-fundo-escuro.svg" alt="" aria-hidden="true" className="h-9 w-9" />
           Agrega
         </Link>
 

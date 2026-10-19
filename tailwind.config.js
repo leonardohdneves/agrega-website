@@ -8,8 +8,8 @@ module.exports = {
     extend: {
       colors: {
         agrega: {
-          graphite: '#2B2F36',
-          'graphite-dark': '#1C1F24',
+          graphite: '#1F2328',
+          'graphite-dark': '#0F1113',
           blue: '#1E4E9A',
           orange: '#F26B1D',
         },

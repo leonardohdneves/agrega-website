@@ -28,7 +28,7 @@ const slides = [
     fundo: "bg-agrega-graphite",
   },
   {
-    logo: "/logos/agrega-simbolo.svg",
+    logo: "/logos/agrega-holding-fundo-claro.svg",
     logoFundoClaro: true,
     alt: "Agrega",
     titulo: "Veja o Agrega funcionando",
@@ -36,7 +36,7 @@ const slides = [
     cta: "Agendar demo",
     href: "/contato",
     foto: "/banners/tecnologia.jpg",
-    fundo: "bg-gradient-to-r from-agrega-blue to-agrega-orange",
+    fundo: "bg-agrega-graphite",
   },
 ];
 

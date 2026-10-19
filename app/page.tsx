@@ -115,7 +115,7 @@ export default function Home() {
       </section>
 
       {/* CTA final */}
-      <section className="bg-gradient-to-r from-agrega-blue to-agrega-orange py-16 text-center text-white">
+      <section className="bg-agrega-graphite py-16 text-center text-white">
         <h2 className="text-3xl font-bold">Pronto para transformar sua gestão?</h2>
         <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
           <Link href="/contato" className="rounded-lg bg-white px-6 py-3 font-semibold text-agrega-graphite">
