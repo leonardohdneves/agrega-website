@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
-    logo: "/logos/agrega-construtoras-branco.svg",
+    logo: "/logos/agrega-construtoras-simbolo.png",
     alt: "Agrega Construtoras",
     titulo: "Planejamento e controle de obras em um só lugar",
     texto: "Orçamento, cronograma e controle financeiro integrados para construtoras.",
@@ -16,7 +16,7 @@ const slides = [
     fundo: "bg-agrega-blue",
   },
   {
-    logo: "/logos/agrega-concreteiras-branco.svg",
+    logo: "/logos/agrega-concreteiras-simbolo.png",
     alt: "Agrega Concreteiras",
     titulo: "Controle total da sua frota de betoneiras",
     texto: "Operações, financeiro e lucratividade de betoneiras e bombas.",
